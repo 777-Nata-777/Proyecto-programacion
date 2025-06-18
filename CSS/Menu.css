@@ -1,0 +1,62 @@
+body {
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+/*header*/
+.header-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #f9c74f, #f9844a);
+    padding: 10px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.logo-inicio img {
+    height: 80px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-inicio img:hover {
+    transform: scale(1.05);
+}
+.h1-inicio h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: entradaTitulo 1s ease-out;
+}
+.h1-inicio h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: entradaTitulo 1s ease-out;
+}
+@keyframes entradaTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/*nav*/
+.navbar {
+    background-color: #ffe8cc !important;
+    border-bottom: 2px solid #f9c74f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.navbar form {
+    display: flex;
+    gap: 8px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #8d4c2f;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #d00000;
+}
