@@ -1,182 +1,452 @@
-/* MiRamita - FacuCSS */
-/* Estilos para la página de Nosotros */
+/* Reset básico para enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Body */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff;
-  color: #6a4e42;
-  margin: 0;
-  padding: 0;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6a4e42;
+    margin: 0;
+    padding: 0;
 }
+
+/* Header */
+.header-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #f9c74f, #f9844a);
+    padding: 10px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo-inicio img {
+    height: 80px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-inicio img:hover {
+    transform: scale(1.05);
+}
+
+.h1-inicio h1, .h1-inicio h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: entradaTitulo 1s ease-out;
+}
+
+@keyframes entradaTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
 .navbar {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: linear-gradient(90deg, #f9c74f, #f9844a);
-  padding: 12px 25px;
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 3px 10px rgba(249, 199, 79, 0.6);
+    background-color: #ffe8cc !important;
+    border-bottom: 2px solid #f9c74f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-.logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 8px rgba(249, 199, 79, 0.8);
+
+.navbar form {
+    display: flex;
+    gap: 8px;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
-  padding: 0;
+
+.navbar a {
+    text-decoration: none;
+    color: #8d4c2f;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: color 0.3s;
 }
-.nav-links li a {
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+
+.navbar a:hover {
+    color: #d00000;
 }
-.nav-links li a:hover {
-  color: #f9c74f;
-  cursor: pointer;
+
+/* Sesion y registro */
+.sesion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 30px;
+    background: #fff3e0;
 }
-.container {
-  max-width: 960px;
-  margin: 50px auto;
-  padding: 0 25px;
+
+.sesion a h3 {
+    font-size: 1.1rem;
+    color: #4e342e;
+    transition: transform 0.2s ease-in-out;
 }
-.text-naranja {
-  color: #f9844a;
-  font-weight: 800;
-  text-shadow: 1px 1px 2px #f9c74f88;
+
+.sesion a h3:hover {
+    transform: scale(1.05);
+    color: #bf360c;
 }
-.section {
-  margin-bottom: 40px;
-  line-height: 1.6;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 0 0 transparent;
-  transition: all 0.4s ease;
+
+/* Carrusel */
+#carouselExampleAutoplaying {
+    max-width: 800px;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.section:hover {
-  background-color: #fff3e0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+.carousel-inner {
+    max-height: 250px;
 }
-.extra-text {
-  margin-top: 10px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  font-style: italic;
-  color: #a65c00;
-  font-weight: 600;
-}
-.extra-text.visible {
-  opacity: 1;
-}
-.section ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #6a4e42;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-.form-section {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 25px;
-  background-color: #fff3e0;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(249, 199, 79, 0.5);
-}
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.login-form label {
-  font-weight: 700;
-  color: #6a4e42;
-}
-.login-form input {
-  padding: 10px;
-  border: 2px solid #f9844a;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-.login-form input:focus {
-  border-color: #f9c74f;
-  outline: none;
-}
-.btn-submit {
-  background-color: #f9844a;
-  color: white;
-  font-weight: 700;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.btn-submit:hover {
-  background-color: #f9c74f;
-  color: #6a4e42;
-}
-.footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 10px;
-  text-align: center;
-  margin-top: 40px;
-}
-.footer a {
-  color: #ff8c00;
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.footer-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.redes-sociales {
-  margin-top: 10px;
-}
-.img-anun-promo img,
-.anun-promo img {
-  width: 150px;
-  height: auto;
-  margin: 10px;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
+
 .carousel-inner img {
-  max-height: 400px;
-  object-fit: cover;
+    height: 250px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    animation: fadeIn 1.2s ease-in-out;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* Anuncio y promos */
 .anun-promo {
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  padding: 10px;
-  text-align: center;
+    padding: 30px;
+    background: #fff8f0;
+    margin: 20px 0;
+    border-radius: 150px;
 }
+
 .anun-promo h4 {
-  margin-bottom: 20px;
-  color: #e67e22;
-  font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #6a4e42;
+    margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
+
+.img-anun-promo {
+    display: flex;
     justify-content: center;
-  }
-  .nav-links {
-    margin-left: 0;
+    flex-wrap: wrap;
     gap: 15px;
-  }
+}
+
+.img-anun-promo img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-anun-promo img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #fbc84f;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.footer-inicio a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-inicio a:hover {
+    color: #d62828;
+}
+
+.footer-inicio h3 {
+    margin: 0;
+    font-size: 15px;
+    color: black;
+}
+
+/* Registrarse */
+.div_registrarse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.div_registrarse form {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #fae2c9;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: #6a4e42;
+    animation: aparecer 0.8s ease-out;
+}
+
+.div_registrarse fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+
+.div_registrarse legend h1 {
+    color: #6a4e42;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.div_registrarse input[type="text"],
+.div_registrarse input[type="password"],
+.div_registrarse input[type="email"],
+.div_registrarse input[type="date"],
+.div_registrarse textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4c8a7;
+    color: #6a4e42;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.div_registrarse textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.div_registrarse input[type="submit"] {
+    background: linear-gradient(90deg, #f9c74f, #f9844a);
+    color: #6a4e42;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+    width: 60%;
+    max-width: 200px;
+}
+
+.div_registrarse input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #d1a642, #ce6d3c);
+}
+
+.div_registrarse input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Iniciar sesión */
+.joker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.Iniciar_sesion_form {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #fae2c9;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: aparecer 0.8s ease-out;
+}
+
+.Iniciar_sesion_form img {
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    animation: floatIn 1s ease;
+}
+
+.Iniciar_sesion_form legend h1 {
+    color: #6a4e42;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    animation: fadeInUp 1s ease;
+}
+
+.Iniciar_sesion_form legend {
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.Iniciar_sesion_form input[type="text"],
+.Iniciar_sesion_form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4c8a7;
+    color: #6a4e42;
+    font-size: 16px;
+    margin-bottom: 15px;
+    max-width: 350px;
+}
+
+.Iniciar_sesion_form input[type="text"]:focus,
+.Iniciar_sesion_form input[type="password"]:focus {
+    box-shadow: 0 0 10px #fae2c9;
+}
+
+.Iniciar_sesion_form input[type="submit"] {
+    background: linear-gradient(90deg, #f9c74f, #f9844a);
+    color: #6a4e42;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Iniciar_sesion_form input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #d1a642, #ce6d3c);
+}
+
+.Iniciar_sesion_form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .div_registrarse form,
+    .Iniciar_sesion_form {
+        padding: 1.5rem;
+    }
+    .div_registrarse legend h1,
+    .Iniciar_sesion_form legend h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .div_registrarse textarea {
+        width: 100%;
+    }
+    .div_registrarse fieldset {
+        padding: 20px;
+    }
+    .div_registrarse input[type="text"],
+    .div_registrarse input[type="password"],
+    .div_registrarse input[type="email"],
+    .div_registrarse input[type="date"],
+    .div_registrarse textarea,
+    .Iniciar_sesion_form input[type="text"],
+    .Iniciar_sesion_form input[type="password"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .div_registrarse input[type="submit"],
+    .Iniciar_sesion_form input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 20px;
+        width: 100%;
+    }
+}
+
+/* ----------------------------------
+   ESPECÍFICO: Quiénes somos, Misión y Valores
+------------------------------------- */
+.section {
+    background-color: #fff3e0; /* color crema suave */
+    padding: 30px 25px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 25px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #6a4e42; /* marrón oscuro */
+    line-height: 1.5;
+}
+
+.section-title {
+    color: #f9844a; /* naranja */
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    border-bottom: 3px solid #f9c74f; /* amarillo */
+    padding-bottom: 8px;
+}
+
+#valores ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #8d4c2f; /* marrón medio */
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Para el texto naranja */
+.text-naranja {
+    color: #f9844a !important;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .section {
+        padding: 20px 15px;
+        margin: 15px 10px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
 }
