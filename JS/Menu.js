@@ -19,3 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     });
 });
+/*GIFT MaxWell*/
+document.addEventListener('DOMContentLoaded', () => {
+    const imagen = document.getElementById('MaxWell');
+    const imagenOriginal = imagen.src;
+    const gifHover = '/Img/';
+
+    imagen.addEventListener('mouseenter', () => {
+        imagen.src = gifHover;
+    });
+
+    imagen.addEventListener('mouseleave', () => {
+        imagen.src = imagenOriginal;
+    });
+});
