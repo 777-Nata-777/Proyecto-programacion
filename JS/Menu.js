@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const imagen = document.getElementById('MaxWell');
     const imagenOriginal = imagen.src;
-    const gifHover = '/Img/';
+    const gifHover = '/Img/maxwell-cat.gif';
 
     imagen.addEventListener('mouseenter', () => {
         imagen.src = gifHover;
