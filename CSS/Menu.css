@@ -90,6 +90,44 @@ footer {
     font-size: 15px;
     color: black;
 }
+/*Aviso*/
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#modal-content {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 20px black;
+    font-family: Arial, sans-serif;
+}
+
+#ok-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#ok-btn:hover {
+    background-color: #45a049;
+}
+
 /*Añadir Producto*/
 .boton-añadir {
     text-align: center;
