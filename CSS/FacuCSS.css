@@ -1,9 +1,6 @@
-/* Reset básico para enlaces */
 a {
     text-decoration: none;
 }
-
-/* Body */
 body {
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,8 +8,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Header */
 .header-inicio {
     display: flex;
     align-items: center;
@@ -43,8 +38,6 @@ body {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* Navbar */
 .navbar {
     background-color: #ffe8cc !important;
     border-bottom: 2px solid #f9c74f;
@@ -53,12 +46,10 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
-
 .navbar form {
     display: flex;
     gap: 8px;
 }
-
 .navbar a {
     text-decoration: none;
     color: #8d4c2f;
@@ -66,12 +57,10 @@ body {
     margin-left: 15px;
     transition: color 0.3s;
 }
-
 .navbar a:hover {
     color: #d00000;
 }
 
-/* Sesion y registro */
 .sesion {
     display: flex;
     justify-content: flex-end;
@@ -91,7 +80,6 @@ body {
     color: #bf360c;
 }
 
-/* Carrusel */
 #carouselExampleAutoplaying {
     max-width: 800px;
     margin: 0 auto;
@@ -116,29 +104,24 @@ body {
     from { opacity: 0.5; }
     to { opacity: 1; }
 }
-
-/* Anuncio y promos */
 .anun-promo {
     padding: 30px;
     background: #fff8f0;
     margin: 20px 0;
     border-radius: 150px;
 }
-
 .anun-promo h4 {
     font-size: 1.4rem;
     text-align: center;
     color: #6a4e42;
     margin-bottom: 20px;
 }
-
 .img-anun-promo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .img-anun-promo img {
     width: 100%;
     max-width: 150px;
@@ -148,12 +131,9 @@ body {
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
-
 .img-anun-promo img:hover {
     transform: scale(1.1);
 }
-
-/* Footer */
 footer {
     background-color: #fbc84f;
     display: flex;
@@ -186,8 +166,6 @@ footer {
     font-size: 15px;
     color: black;
 }
-
-/* Registrarse */
 .div_registrarse {
     display: flex;
     justify-content: center;
@@ -266,8 +244,6 @@ footer {
 .div_registrarse input[type="checkbox"] {
     margin-right: 8px;
 }
-
-/* Iniciar sesión */
 .joker {
     display: flex;
     justify-content: center;
@@ -350,8 +326,6 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
-/* Animaciones */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
@@ -401,10 +375,6 @@ footer {
         width: 100%;
     }
 }
-
-/* ----------------------------------
-   ESPECÍFICO: Quiénes somos, Misión y Valores
-------------------------------------- */
 .section {
     background-color: #fff3e0; /* color crema suave */
     padding: 30px 25px;
@@ -415,7 +385,6 @@ footer {
     color: #6a4e42; /* marrón oscuro */
     line-height: 1.5;
 }
-
 .section-title {
     color: #f9844a; /* naranja */
     margin-bottom: 20px;
@@ -434,13 +403,10 @@ footer {
     font-weight: 600;
     font-size: 1.1rem;
 }
-
-/* Para el texto naranja */
 .text-naranja {
     color: #f9844a !important;
 }
 
-/* Responsive para móviles */
 @media (max-width: 600px) {
     .section {
         padding: 20px 15px;
