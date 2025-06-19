@@ -92,9 +92,10 @@
 
 .oferta-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
     justify-items: center;
+    padding: 0 10px;
 }
 
 .oferta-item {
@@ -215,6 +216,19 @@
     }
 
     .oferta-item {
-        max-width: 90%;
+        max-width: 160px;
+    }
+}
+
+.precioant{
+    text-decoration: line-through;
+}
+
+@media (max-width: 480px) {
+    .oferta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oferta-item {
+        max-width: 160px; /* ajustamos para que entren cómodas en 2 columnas */
     }
 }
