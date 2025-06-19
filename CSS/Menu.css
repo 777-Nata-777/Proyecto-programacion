@@ -61,6 +61,23 @@ a {
 .navbar a:hover {
     color: #d00000;
 }
+/*sesion y registro*/
+.sesion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 30px;
+    background: #fff3e0;
+}
+.sesion a h3 {
+    font-size: 1.1rem;
+    color: #4e342e;
+    transition: transform 0.2s ease-in-out;
+}
+.sesion a h3:hover {
+    transform: scale(1.05);
+    color: #bf360c;
+}
 /*footer*/
 footer {
     background-color: #fbc84f;
@@ -609,4 +626,52 @@ a {
 }
 .item-producto {
     height: 100%;
+}
+/*El lado oscuro*/
+body.dark-mode {
+    background-color: #111 !important;
+    color: black !important;
+}
+.toggle-theme-btn {
+    left: 20px;
+    font-size: 1.8rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+.toggle-theme-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(127, 230, 158);
+}
+/*audio*/
+#Wazaaa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+#Wazaaa:hover {
+    transform: scale(1.1);
+    background-color: rgb(127, 230, 158);
 }

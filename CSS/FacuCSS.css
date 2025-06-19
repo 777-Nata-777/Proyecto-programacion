@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/*Header*/
 .header-inicio {
     display: flex;
     align-items: center;
@@ -134,6 +135,7 @@ body {
 .img-anun-promo img:hover {
     transform: scale(1.1);
 }
+/*footer*/
 footer {
     background-color: #fbc84f;
     display: flex;

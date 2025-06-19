@@ -387,24 +387,47 @@ footer {
 
 
 .anun-promo.dark {
-  background-color: #1a1a1a;
-  color: white;
+    background-color: #1a1a1aa1;
+    color: white;
 }
 
 .anun-promo.dark h4 {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .anun-promo.dark img {
-  filter: brightness(0.8);
+    filter: brightness(0.8);
 }
 
 .toggle-dark {
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-top: 15px;
-  margin-left: 15px;
-  display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: block;
+}
+/*El lado oscuro*/
+body.dark-mode {
+    background-color: #111 !important;
+    color: white !important;
+}
+.toggle-theme-btn {
+    left: 20px;
+    font-size: 1.8rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
 }
