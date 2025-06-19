@@ -18,22 +18,30 @@
         </div>
         
     </header>
-
-    <nav class="nav-ofertas">
-
-        <div class="container-fluid">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-
-        <a href="inicio.html">Inicio</a>
-        <a href="Nosotros.html">Nosotros</a>
-        <a href="#">Ayuda</a>
-        <a href="/HTML/Menu.html">Admin</a>
-    </nav>
-
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-naranja" href="Inicio.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="menuNav">
+        <form class="d-flex my-2 my-md-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Qué buscás?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <ul class="navbar-nav ms-md-4">
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="ayuda.html">Ayuda</a></li>
+          <li class="nav-item"><a class="nav-link" href="/HTML/Menu.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="sesion px-3 py-2 d-flex justify-content-end gap-3">
+        <a href="#"><h3 class="h6">Iniciar Sesión</h3></a>
+        <a href="#"><h3 class="h6">Registrarse</h3></a>
+    </div>
     <section class="ofertas-section">
         <h2>¡Descubrí nuestras promociones!</h2>
         <div class="oferta-grid">
@@ -138,8 +146,6 @@
                 <h4>Detergente Bell 900 ml</h4>
                 <p>$999,99 c/u</p>
             </div>
-
-            <!-- Agrega más productos si querés -->
         </div>
     </section>
 
