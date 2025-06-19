@@ -1,41 +1,67 @@
-<!-- MiRamita/nosotros.html -->
-<!-- Esta página es la página de inicio de la página web de Nosotros -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nosotros - Comestibles La Merced</title>
-  <link rel="stylesheet" href="../CSS/FacuCSS.css" />
-  <script defer src="FacuJS.js"></script>
-  <link rel="icon" href="/Img/Logo_la_merced (1).ico">
+  <title>Comestibles la merced</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/CSS/FacuCSS.css" />
+  <link rel="icon" href="/Img/Logo_la_merced (1).ico" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="Inicio.html">
-        <img src="imagenes/Logo la merced.jfif" alt="Logo Comestibles La Merced" class="logo" />
+  <header class="header-inicio">
+    <div class="logo-inicio">
+      <a href="/HTML/Inicio.html">
+        <img src="/Img/Logo_la_merced.png" alt="Logo la merced" />
       </a>
-      <ul class="nav-links">
-        <li><a href="Inicio.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="iniciar_sesion.html" class="btn-navbar">Iniciar Sesión</a></li>
-        <li><a href="registrarse.html" class="btn-navbar">Registrarse</a></li>
-      </ul>
-    </nav>
+    </div>
+    <div class="h1-inicio">
+      <h1>Comestibles la merced</h1>
+    </div>
   </header>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="¿Que buscas?"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+    <a href="Inicio.html">Inicio</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="ayuda.html">Ayuda</a>
+    <a href="/HTML/Menu.html">Admin</a>
+  </nav>
+  <div class="sesion">
+    <a href="#">
+      <h3>Iniciar Sesion</h3>
+    </a>
+    <a href="#">
+      <h3>Registrarse</h3>
+    </a>
+  </div>
   <main class="container">
     <section id="quienes-somos" class="section">
       <h2 class="section-title text-naranja">Quiénes somos</h2>
       <p>
-        En <strong>Comestibles La Merced</strong> nos dedicamos a ofrecer productos de primera calidad
-        al mejor precio. Somos una empresa familiar con más de 20 años de trayectoria en el rubro
-        de alimentos y limpieza, comprometidos con nuestros clientes y la comunidad.
+        En <strong>Comestibles La Merced</strong> nos dedicamos a ofrecer productos de primera
+        calidad al mejor precio. Somos una empresa familiar con más de 20 años de
+        trayectoria en el rubro de alimentos y limpieza, comprometidos con nuestros
+        clientes y la comunidad.
       </p>
       <div class="extra-text"></div>
     </section>
-
     <section id="mision" class="section">
       <h3 class="section-title text-naranja">Nuestra misión</h3>
       <p>
@@ -56,15 +82,23 @@
       <div class="extra-text"></div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <p>&copy; 2025 Comestibles La Merced. Todos los derechos reservados.</p>
-      <p>Contacto: <a href="mailto:Isoto2726@hotmail.com">Isoto2726@hotmail.com</a></p>
-      <div class="redes-sociales">
-        <a href="https://www.instagram.com/comestiblesla.merced/" target="_blank">Instagram</a>
-      </div>
+  <footer>
+    <div class="footer-inicio">
+      <a href="#">Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Sucursal</a>
+    </div>
+    <div class="footer-inicio">
+      <a href="#">Ayuda</a>
+      <a href="#">Copyright © 2025</a>
+    </div>
+    <div class="footer-inicio">
+      <a href="#">Contactos</a>
+      <h3>CORREO: Isoto2726@hotmail.com</h3>
+      <h3>TEL: 0387 581-7328</h3>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="/JS/FacuJS.js"></script>
 </body>
 </html>
