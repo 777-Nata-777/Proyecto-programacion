@@ -6,19 +6,37 @@ document.querySelectorAll('.button').forEach(button => button.addEventListener('
     }
     e.preventDefault();
 }));
-/*Aviso*/
+// Audio global
+const audio = new Audio('/Audio/maxwell-nachorapista.mp3');
+audio.loop = true;
+
 document.addEventListener('DOMContentLoaded', () => {
-    const audio = new Audio('/Audio/maxwell-nachorapista.mp3');
-    audio.loop = true;
+    // Aviso
     const modal = document.getElementById('modal');
     const okBtn = document.getElementById('ok-btn');
+
     okBtn.addEventListener('click', () => {
         audio.play().catch((err) => {
             console.warn("Error al intentar reproducir el audio:", err);
         });
         modal.style.display = 'none';
     });
+
+    // Botón flotante de control de audio
+    const toggleBtn = document.getElementById('Wazaaa');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                toggleBtn.textContent = '🔊';
+            } else {
+                audio.pause();
+                toggleBtn.textContent = '🔇';
+            }
+        });
+    }
 });
+
 /*GIFT MaxWell*/
 document.addEventListener('DOMContentLoaded', () => {
     const imagen = document.getElementById('MaxWell');
@@ -43,4 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
             botonAñadir.classList.remove('pulse');
         }, 400);
     });
+});
+/*El lado oscuro*/
+const toggleBtn = document.getElementById("themeToggleBtn");
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });
