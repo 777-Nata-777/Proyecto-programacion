@@ -374,3 +374,38 @@ footer {
 .img-anun-promo img {
     width: 100%;
 }
+
+.producto-info {
+    font-weight: bold;
+    animation: aparecer 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.anun-promo.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.anun-promo.dark h4 {
+  color: #f1f1f1;
+}
+
+.anun-promo.dark img {
+  filter: brightness(0.8);
+}
+
+.toggle-dark {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: block;
+}
