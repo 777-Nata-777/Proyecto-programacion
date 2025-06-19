@@ -166,232 +166,29 @@ footer {
     font-size: 15px;
     color: black;
 }
-.div_registrarse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
 
-.div_registrarse form {
-    background-color: #fff8f0;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 25px #fae2c9;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    color: #6a4e42;
-    animation: aparecer 0.8s ease-out;
-}
-
-.div_registrarse fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    border: none;
-}
-
-.div_registrarse legend h1 {
-    color: #6a4e42;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.div_registrarse input[type="text"],
-.div_registrarse input[type="password"],
-.div_registrarse input[type="email"],
-.div_registrarse input[type="date"],
-.div_registrarse textarea {
-    width: 90%;
-    max-width: 400px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: #e4c8a7;
-    color: #6a4e42;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.div_registrarse textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.div_registrarse input[type="submit"] {
-    background: linear-gradient(90deg, #f9c74f, #f9844a);
-    color: #6a4e42;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 1rem;
-    width: 60%;
-    max-width: 200px;
-}
-
-.div_registrarse input[type="submit"]:hover {
-    transform: scale(1.05);
-    background: linear-gradient(90deg, #d1a642, #ce6d3c);
-}
-
-.div_registrarse input[type="checkbox"] {
-    margin-right: 8px;
-}
-.joker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.Iniciar_sesion_form {
-    background-color: #fff8f0;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 25px #fae2c9;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    animation: aparecer 0.8s ease-out;
-}
-
-.Iniciar_sesion_form img {
-    border-radius: 100px;
-    margin-bottom: 1rem;
-    animation: floatIn 1s ease;
-}
-
-.Iniciar_sesion_form legend h1 {
-    color: #6a4e42;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    animation: fadeInUp 1s ease;
-}
-
-.Iniciar_sesion_form legend {
-    padding: 0;
-    margin-bottom: 1.5rem;
-}
-
-.Iniciar_sesion_form input[type="text"],
-.Iniciar_sesion_form input[type="password"] {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: #e4c8a7;
-    color: #6a4e42;
-    font-size: 16px;
-    margin-bottom: 15px;
-    max-width: 350px;
-}
-
-.Iniciar_sesion_form input[type="text"]:focus,
-.Iniciar_sesion_form input[type="password"]:focus {
-    box-shadow: 0 0 10px #fae2c9;
-}
-
-.Iniciar_sesion_form input[type="submit"] {
-    background: linear-gradient(90deg, #f9c74f, #f9844a);
-    color: #6a4e42;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.Iniciar_sesion_form input[type="submit"]:hover {
-    transform: scale(1.05);
-    background: linear-gradient(90deg, #d1a642, #ce6d3c);
-}
-
-.Iniciar_sesion_form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(25px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes floatIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-    .div_registrarse form,
-    .Iniciar_sesion_form {
-        padding: 1.5rem;
-    }
-    .div_registrarse legend h1,
-    .Iniciar_sesion_form legend h1 {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-    .div_registrarse textarea {
-        width: 100%;
-    }
-    .div_registrarse fieldset {
-        padding: 20px;
-    }
-    .div_registrarse input[type="text"],
-    .div_registrarse input[type="password"],
-    .div_registrarse input[type="email"],
-    .div_registrarse input[type="date"],
-    .div_registrarse textarea,
-    .Iniciar_sesion_form input[type="text"],
-    .Iniciar_sesion_form input[type="password"] {
-        font-size: 14px;
-        padding: 8px;
-    }
-    .div_registrarse input[type="submit"],
-    .Iniciar_sesion_form input[type="submit"] {
-        font-size: 14px;
-        padding: 8px 20px;
-        width: 100%;
-    }
-}
 .section {
-    background-color: #fff3e0; /* color crema suave */
+    background-color: #fff3e0;
     padding: 30px 25px;
     border-radius: 15px;
     max-width: 900px;
     margin: 25px auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    color: #6a4e42; /* marrón oscuro */
+    color: #6a4e42;
     line-height: 1.5;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.section:hover {
+    transform: scale(1.02);
 }
 .section-title {
-    color: #f9844a; /* naranja */
+    color: #f9844a;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 2rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
-    border-bottom: 3px solid #f9c74f; /* amarillo */
+    border-bottom: 3px solid #f9c74f;
     padding-bottom: 8px;
 }
 
@@ -399,12 +196,27 @@ footer {
     list-style-type: square;
     padding-left: 20px;
     margin-top: 10px;
-    color: #8d4c2f; /* marrón medio */
+    color: #8d4c2f;
     font-weight: 600;
     font-size: 1.1rem;
 }
 .text-naranja {
     color: #f9844a !important;
+}
+
+.extra-text {
+    display: none;
+    background-color: #8d4c2f;
+    color: #fff8f0;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.section:hover .extra-text {
+    display: block;
 }
 
 @media (max-width: 600px) {
@@ -414,5 +226,21 @@ footer {
     }
     .section-title {
         font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    footer h3 {
+        font-size: 1rem;
     }
 }
