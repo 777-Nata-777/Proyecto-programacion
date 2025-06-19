@@ -33,3 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         imagen.src = imagenOriginal;
     });
 });
+/*Añadir boton*/
+document.addEventListener('DOMContentLoaded', () => {
+    const botonAñadir = document.querySelector('.boton-añadir a');
+
+    botonAñadir.addEventListener('click', () => {
+        botonAñadir.classList.add('pulse');
+        setTimeout(() => {
+            botonAñadir.classList.remove('pulse');
+        }, 400);
+    });
+});
