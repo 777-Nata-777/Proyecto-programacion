@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fff3e0;
+    
     color: #333;
 }
 
@@ -10,13 +10,50 @@
 .header-ofertas {
     background: linear-gradient(135deg, #f9c74f, #f9844a);
     padding: 15px 20px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    
+   
 }
+
+.header-ofertas .logo img {
+    height: 70px;
+    width: auto;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+
+/* Este contenedor envuelve el texto */
+.h1-inicio {
+    flex-grow: 1;
+    min-width: 0;  /* permite que se reduzca sin romper layout */
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-end;
+}
+
+
+.h1-inicio h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-right: 20px; /* en lugar de margin-left */
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: entradaTitulo 1s ease-out;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
 
 .me-2{
     width: 210px;
@@ -38,20 +75,7 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-.header-ofertas h1 {
-    font-size: 40px;
-    
-    text-align: center;
-    flex-grow: 1;
-    margin: 10px 0;
 
-    color: #ffffff;
-    
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    animation: entradaTitulo 1s ease-out;
-
-
-}
 
 /* Navegación */
 .nav-ofertas {
@@ -168,9 +192,22 @@
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .header-ofertas {
-        flex-direction: column;
-        text-align: center;
+       flex-direction: row; /* <- importante mantener horizontal */
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
     }
+
+    .h1-inicio h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-ofertas .logo img {
+        height: 50px;
+    }
+
 
     .nav-ofertas {
         gap: 10px;
@@ -220,8 +257,9 @@
     }
 }
 
-.precioant{
-    text-decoration: line-through;
+.precioant {
+  text-decoration: line-through;
+  color: #b71c1c;
 }
 
 @media (max-width: 480px) {
@@ -231,4 +269,60 @@
     .oferta-item {
         max-width: 160px; /* ajustamos para que entren cómodas en 2 columnas */
     }
+}
+
+
+.navbar {
+    background-color: #ffe8cc !important;
+    border-bottom: 2px solid #f9c74f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.navbar form {
+    display: flex;
+    gap: 8px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #8d4c2f;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #d00000;
+}
+
+.sesion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 30px;
+    background: #fff3e0;
+}
+
+.sesion a h3 {
+    font-size: 1.1rem;
+    color: #4e342e;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;     /* Quita el subrayado */
+    color: inherit;
+}
+
+.sesion a h3:hover {
+    transform: scale(1.05);
+    color: #bf360c;
+}
+
+
+.sesion a {
+    text-decoration: none;       /* Quita subrayado azul */
+    color: #4e342e;              /* Color personalizado */
+}
+
+.sesion a:hover {
+    text-decoration: none;       /* Asegura que no aparezca al pasar el mouse */
+    color: #bf360c;              /* Color al pasar el mouse */
 }
