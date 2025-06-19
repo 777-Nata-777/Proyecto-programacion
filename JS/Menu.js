@@ -68,3 +68,21 @@ toggleBtn.addEventListener("click", () => { /*Al hacer clic:*/
     document.body.classList.toggle("dark-mode"); /*Alterna (toggle) la clase dark-mode en el <body>.*/
     toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙"; /*Cambia el texto del botón según el modo.*/
 });
+/*Botón para mostrar y ocultar el video*/
+document.addEventListener('DOMContentLoaded', () => {
+    const videoBtn = document.getElementById('toggleVideoBtn');
+    const videoContainer = document.getElementById('videoContainer');
+
+    let videoVisible = false;
+
+    videoBtn.addEventListener('click', () => {
+        videoVisible = !videoVisible;
+        if (videoVisible) {
+            document.body.classList.add('video-mode');
+            videoContainer.style.display = 'block';
+        } else {
+            document.body.classList.remove('video-mode');
+            videoContainer.style.display = 'none';
+        }
+    });
+});
