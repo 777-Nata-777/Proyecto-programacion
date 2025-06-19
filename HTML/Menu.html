@@ -19,19 +19,26 @@
             <h1>Comestibles la merced</h1>
         </div>
     </header>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-        <a href="Inicio.html">Inicio</a>
-        <a href="ofertas.html">Ofertas</a>
-        <a href="Nosotros.html">Nosotros</a>
-        <a href="ayuda.html">Ayuda</a>
-        <a href="Menu.html">Admin</a>
-    </nav>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-naranja" href="Inicio.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="menuNav">
+        <form class="d-flex my-2 my-md-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Qué buscás?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <ul class="navbar-nav ms-md-4">
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="ayuda.html">Ayuda</a></li>
+          <li class="nav-item"><a class="nav-link" href="/HTML/Menu.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <div id="modal">
         <div id="modal-content">
             <img src="/Img/Gato-cara.jfif" alt="Gato">
